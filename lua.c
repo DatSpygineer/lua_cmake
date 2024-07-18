@@ -6,7 +6,7 @@
 
 #define lua_c
 
-#include "lprefix.h"
+#include "core/lprefix.h"
 
 
 #include <stdio.h>
@@ -15,11 +15,11 @@
 
 #include <signal.h>
 
-#include "lua.h"
+#include "core/lua.h"
 
-#include "lauxlib.h"
-#include "lualib.h"
-#include "llimits.h"
+#include "core/lauxlib.h"
+#include "core/lualib.h"
+#include "core/llimits.h"
 
 
 #if !defined(LUA_PROGNAME)

@@ -36,7 +36,7 @@
 
 /* no need to change anything below this line ----------------------------- */
 
-#include "lprefix.h"
+#include "core/lprefix.h"
 
 #include <assert.h>
 #include <ctype.h>
@@ -60,7 +60,7 @@
 #define LUA_LIB
 #define ltable_c
 #define lvm_c
-#include "luaconf.h"
+#include "core/luaconf.h"
 
 /* do not export internal symbols */
 #undef LUAI_FUNC
@@ -71,43 +71,43 @@
 #define LUAI_DDEF	static
 
 /* core -- used by all */
-#include "lzio.c"
-#include "lctype.c"
-#include "lopcodes.c"
-#include "lmem.c"
-#include "lundump.c"
-#include "ldump.c"
-#include "lstate.c"
-#include "lgc.c"
-#include "llex.c"
-#include "lcode.c"
-#include "lparser.c"
-#include "ldebug.c"
-#include "lfunc.c"
-#include "lobject.c"
-#include "ltm.c"
-#include "lstring.c"
-#include "ltable.c"
-#include "ldo.c"
-#include "lvm.c"
-#include "lapi.c"
+#include "core/lzio.c"
+#include "core/lctype.c"
+#include "core/lopcodes.c"
+#include "core/lmem.c"
+#include "core/lundump.c"
+#include "core/ldump.c"
+#include "core/lstate.c"
+#include "core/lgc.c"
+#include "core/llex.c"
+#include "core/lcode.c"
+#include "core/lparser.c"
+#include "core/ldebug.c"
+#include "core/lfunc.c"
+#include "core/lobject.c"
+#include "core/ltm.c"
+#include "core/lstring.c"
+#include "core/ltable.c"
+#include "core/ldo.c"
+#include "core/lvm.c"
+#include "core/lapi.c"
 
 /* auxiliary library -- used by all */
-#include "lauxlib.c"
+#include "core/lauxlib.c"
 
 /* standard library  -- not used by luac */
 #ifndef MAKE_LUAC
-#include "lbaselib.c"
-#include "lcorolib.c"
-#include "ldblib.c"
-#include "liolib.c"
-#include "lmathlib.c"
-#include "loadlib.c"
-#include "loslib.c"
-#include "lstrlib.c"
-#include "ltablib.c"
-#include "lutf8lib.c"
-#include "linit.c"
+#include "core/lbaselib.c"
+#include "core/lcorolib.c"
+#include "core/ldblib.c"
+#include "core/liolib.c"
+#include "core/lmathlib.c"
+#include "core/loadlib.c"
+#include "core/loslib.c"
+#include "core/lstrlib.c"
+#include "core/ltablib.c"
+#include "core/lutf8lib.c"
+#include "core/linit.c"
 #endif
 
 /* lua */
